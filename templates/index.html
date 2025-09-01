@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invigilator Allotment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Invigilator Allotment</h1>
+        <p>Click the button below to generate a new invigilator allotment based on the data in the database.</p>
+        <form action="{{ url_for('allot') }}" method="post">
+            <button type="submit">Generate Allotment</button>
+        </form>
+    </div>
+</body>
+</html>
